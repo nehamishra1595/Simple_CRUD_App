@@ -1,0 +1,80 @@
+<div id="app">
+  <div id="title"></div>
+  <div id="data" style="margin-top:40px;"></div>
+
+  <div id="action" style="margin-top:10px;float:right;margin-right:180px;">
+    <span id="add-element">
+      <button id="add-user">Add</button>
+    </span>
+    <span id="edit-element">
+      <button id="edit-user" disabled="true">Edit</button>
+    </span>
+    <span id="delete-element">
+      <button id="delete-user" disabled="true">Delete</button>
+    </span>
+  </div>
+  <div class="overlay">
+    <div class="popup">
+      <div class="close">&#10006;</div>
+      <div class="container">
+        <form id="contact" action="" method="post">
+          <h3>Add User Details</h3>
+          <h4>Please enter the following user details</h4>
+          <fieldset>
+            <input
+              placeholder="Enter User ID"
+              type="text"
+              id="userId"
+              tabindex="1"
+              required
+              autofocus
+            />
+          </fieldset>
+          <fieldset>
+            <input
+              placeholder="Enter Name"
+              type="text"
+              id="name"
+              tabindex="1"
+              required
+              autofocus
+            />
+          </fieldset>
+          <fieldset>
+            <input
+              placeholder="Enter Email Address"
+              type="email"
+              id="email"
+              tabindex="2"
+              required
+            />
+          </fieldset>
+          <fieldset>
+            <input
+              placeholder="Enter Phone Number (optional)"
+              type="tel"
+              id="phone"
+              tabindex="3"
+              required
+            />
+          </fieldset>
+          <fieldset>
+            <input
+              placeholder="Enter User Name"
+              type="text"
+              id="userName"
+              tabindex="4"
+              required
+            />
+          </fieldset>
+          <fieldset></fieldset>
+          <fieldset>
+            <button name="submit" type="button" id="submitUser">
+              Submit
+            </button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
